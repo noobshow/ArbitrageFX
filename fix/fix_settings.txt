@@ -1,0 +1,24 @@
+# default settings for sessions
+[DEFAULT]
+ConnectionType=initiator
+ReconnectInterval=5
+HeartBtInt=30
+FileStorePath=incoming
+FileLogPath=outgoing
+BeginString=FIX.4.4
+
+# session definition CSERVER/QUOTE/1020650
+[SESSION]
+HeartBtInt=30
+SenderCompID=icmarkets.1020650
+TargetCompID=CSERVER
+SenderSubID=QUOTE
+# Plain text
+SocketConnectPort=5201
+# SSL
+#SocketConnectPort=5211
+SocketConnectHost=3h44.p.ctrader.com
+DataDictionary=config/FIX44.xml
+StartTime=00:00:00
+EndTime=00:00:00
+
